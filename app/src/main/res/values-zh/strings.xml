@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greeting">请选择语言</string>
+    <string name="langBtn1">英文</string>
+    <string name="langBtn2">法文</string>
+    <string name="langBtn3">意大利文</string>
+    <string name="langBtn4">中文</string>
+    <string name="refreshBLETable">搜索设备</string>
+    <string name="scan_Btn">扫描</string>
+    <string name="stop_Btn">停止扫描</string>
+    <string name="unknown_service">无名服务</string>
+    <string name="unknown_characteristic">无名特征</string>
+    <string name="unknown_device">无名设备</string>
+    <string name="error_bluetooth_not_supported">不支援蓝牙</string>
+    <string name="title_devices">BLE扫描</string>
+    <string name="connected">已联结</string>
+    <string name="disconnected">已断结</string>
+    <string name="no_data">没有数据</string>
+    <string name="reset">重启</string>
+    <string name="ble_not_supported">不支援BLE</string>
+    <string name="save">保存</string>
+    <string name="load">加载</string>
+    <string name="function">功能</string>
+    <string name="motor_button">发动机</string>
+    <string name="light_button">灯光</string>
+    <string name="your_preset">你的预设</string>
+    <string name="light_temperature">光温</string>
+    <string name="intensity">强度, %</string>
+    <string name="dialog_title">通知</string>
+    <string name="dialog_message">无法连接到设备</string>
+    <string name="dialog_button">Ok</string>
+    <string name="scanning">扫描中</string>
+    <string name="seems_like_you_haven_t_add_any_device">看来你好像还没有添加任何设备。</string>
+    <string name="laser">激光</string>
+    <string name="factory_reset">重启</string>
+    <string name="yes_string">是</string>
+    <string name="no_string">否</string>
+    <string name="exit_string">退出 Smart Track 吗？</string>
+    <string name="location_request_string">使用此应用程序需要位置服务。允许服务？</string>
+    <string name="location_permission_string">允许Smart Track获取位置权限？</string>
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+	<dimen name="main_button_width">204dp</dimen>
+	<dimen name="save_width">120dp</dimen>
+	<dimen name="listview_height">480dp</dimen>
+	<dimen name="save_height">126dp</dimen>
+	<dimen name="save_button_height">78dp</dimen>
+	<dimen name="main_button_height">204dp</dimen>
+	<dimen name="seekbar_width">402dp</dimen>
+	<dimen name="bottom_button_height">60dp</dimen>
+	<dimen name="bottom_button_width">336dp</dimen>
+	<dimen name="save_button_width">72dp</dimen>
+	<dimen name="save_buttons_text_size">31.2sp</dimen>
+	<dimen name="lightbar_value">120sp</dimen>
+	<dimen name="deviceId_title_size">40.8sp</dimen>
+	<dimen name="subtitle_text_size">19.2sp</dimen>
+	<dimen name="toNextActivity_text_size">24sp</dimen>
+	<dimen name="save_size">60sp</dimen>
+	<dimen name="subtitle_size">30sp</dimen>
+	<dimen name="app_title_text">40.8sp</dimen>
+	<dimen name="light_temp_text_size">16.8sp</dimen>
+	<dimen name="bottom_button_text_size">21.6sp</dimen>
+	<dimen name="button_size">31.2sp</dimen>
+	<dimen name="factory_reset_size">24sp</dimen>
+	<dimen name="progressBar_size">62.4dp</dimen>
+	<dimen name="elipsis_height">48dp</dimen>
+	<dimen name="ketronix_height">48dp</dimen>
+	<dimen name="target_size">225.6dp</dimen>
+	<dimen name="st_logo_height">169.2dp</dimen>
+	<dimen name="st_logo_width">265.2dp</dimen>
+	<dimen name="elipsis_width">93.6dp</dimen>
+	<dimen name="ketronix_width">93.6dp</dimen>
+	<dimen name="target_height">72dp</dimen>
+</resources>

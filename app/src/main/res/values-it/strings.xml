@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greeting">Per favore scegli una lingua</string>
+    <string name="langBtn4">Cinese</string>
+    <string name="langBtn1">Inglese</string>
+    <string name="langBtn2">Francese</string>
+    <string name="langBtn3">Italiano</string>
+    <string name="refreshBLETable">Cercare dispositivi</string>
+    <string name="intensity">INTENSITÀ, %</string>
+    <string name="light_temperature">TEMPERATURA LEGGERA</string>
+    <string name="your_preset">Il tuo preset</string>
+    <string name="light_button">Luce</string>
+    <string name="motor_button">Il motore</string>
+    <string name="function">Funzione</string>
+    <string name="load">Caricare</string>
+    <string name="save">Memorizzare</string>
+    <string name="ble_not_supported">BLE non è supportato</string>
+    <string name="reset">Il reset</string>
+    <string name="no_data">Nessun dato</string>
+    <string name="disconnected">Scollegato</string>
+    <string name="connected">Collegato</string>
+    <string name="title_devices">BLE Scansione del dispositivo</string>
+    <string name="error_bluetooth_not_supported">Bluetooth non è supportato</string>
+    <string name="unknown_device">Dispositivo sconosciuto</string>
+    <string name="unknown_characteristic">Caratteristica sconosciuta</string>
+    <string name="unknown_service">Servizio sconosciuto</string>
+    <string name="stop_Btn">Fermare</string>
+    <string name="scan_Btn">Analizzare</string>
+    <string name="dialog_title">Informazione</string>
+    <string name="dialog_message">Impossibile connettersi al dispositivo</string>
+    <string name="dialog_button">Ok</string>
+    <string name="scanning">lettura</string>
+    <string name="seems_like_you_haven_t_add_any_device">Sembra che tu non abbia aggiunto nessun dispositivo.</string>
+    <string name="laser">Laser</string>
+    <string name="factory_reset">Reset</string>
+    <string name="yes_string">Sì</string>
+    <string name="no_string">" No"</string>
+    <string name="exit_string">Esci da Smart Track?</string>
+    <string name="location_request_string">Per utilizzare questa app è necessario il servizio di localizzazione. Consentire il servizio?</string>
+    <string name="location_permission_string">Consenti a Smart Track di ottenere i permessi di localizzazione?</string>
+</resources>

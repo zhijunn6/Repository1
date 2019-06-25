@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageSelectionActivity"
+    android:background="@color/text_type2">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="8000dp"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:text="@string/greeting"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/subtitle_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <Button
+        android:id="@+id/selectEngButton"
+        android:layout_width="@dimen/bottom_button_width"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_below="@+id/greetingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_shadow"
+        android:text="@string/langBtn1"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/bottom_button_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/selectFrcButton"
+        android:layout_width="@dimen/bottom_button_width"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_below="@+id/selectEngButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shadow"
+        android:text="@string/langBtn2"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/bottom_button_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/selectItaButton"
+        app:layout_constraintStart_toStartOf="@+id/selectItaButton"
+        app:layout_constraintTop_toBottomOf="@+id/selectItaButton" />
+
+    <Button
+        android:id="@+id/selectItaButton"
+        android:layout_width="@dimen/bottom_button_width"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_below="@+id/selectFrcButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shadow"
+        android:text="@string/langBtn3"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/bottom_button_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/selectEngButton"
+        app:layout_constraintStart_toStartOf="@+id/selectEngButton"
+        app:layout_constraintTop_toBottomOf="@+id/selectEngButton" />
+
+    <Button
+        android:id="@+id/selectChnButton"
+        android:layout_width="@dimen/bottom_button_width"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_below="@+id/selectItaButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shadow"
+        android:text="@string/langBtn4"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/bottom_button_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/selectFrcButton"
+        app:layout_constraintStart_toStartOf="@+id/selectFrcButton"
+        app:layout_constraintTop_toBottomOf="@+id/selectFrcButton" />
+
+
+</android.support.constraint.ConstraintLayout>

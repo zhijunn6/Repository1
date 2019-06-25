@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_type2">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.60" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="8000dp"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <TextView
+        android:id="@+id/device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/device_id"
+        android:textColor="@color/button_type2"
+        android:textSize="@dimen/deviceId_title_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/function"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/subtitle_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/device_id" />
+
+    <Button
+        android:id="@+id/light_button"
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="@dimen/main_button_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/blue_button"
+        android:drawableTop="@drawable/white_logo"
+        android:paddingTop="30dp"
+        android:text="@string/light_button"
+        android:textAllCaps="false"
+        android:textColor="@color/text_type2"
+        android:textSize="@dimen/toNextActivity_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/motor_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <Button
+        android:id="@+id/motor_button"
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="@dimen/main_button_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/white_button"
+        android:drawableTop="@drawable/blue_settings_icon"
+        android:paddingTop="30dp"
+        android:text="@string/motor_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/toNextActivity_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/light_button"
+        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/laser"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/subtitle_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/laser_switch"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <Switch
+        android:id="@+id/laser_switch"
+        android:layout_width="62dp"
+        android:layout_height="55dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:textColorHighlight="@color/gradient_end_2"
+        android:textColorLink="@color/button_type2"
+        android:theme="@style/SwitchColor"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/your_preset"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/subtitle_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/save_button_1"
+        android:layout_width="@dimen/save_button_width"
+        android:layout_height="@dimen/save_button_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_border"
+        android:text="1"
+        android:textSize="@dimen/save_buttons_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/save_button_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/save_button_2"
+        android:layout_width="@dimen/save_button_width"
+        android:layout_height="@dimen/save_button_height"
+        android:background="@drawable/button_border"
+        android:text="2"
+        android:textSize="@dimen/save_buttons_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/save_button_1"
+        app:layout_constraintEnd_toStartOf="@+id/save_button_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save_button_1"
+        app:layout_constraintTop_toTopOf="@+id/save_button_1" />
+
+    <Button
+        android:id="@+id/save_button_3"
+        android:layout_width="@dimen/save_button_width"
+        android:layout_height="@dimen/save_button_height"
+        android:background="@drawable/button_border"
+        android:text="3"
+        android:textSize="@dimen/save_buttons_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/save_button_2"
+        app:layout_constraintEnd_toStartOf="@+id/save_button_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save_button_2"
+        app:layout_constraintTop_toTopOf="@+id/save_button_2" />
+
+    <Button
+        android:id="@+id/save_button_4"
+        android:layout_width="@dimen/save_button_width"
+        android:layout_height="@dimen/save_button_height"
+        android:background="@drawable/button_border"
+        android:text="4"
+        android:textSize="@dimen/save_buttons_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/save_button_3"
+        app:layout_constraintEnd_toStartOf="@+id/save_button_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save_button_3"
+        app:layout_constraintTop_toTopOf="@+id/save_button_3" />
+
+    <Button
+        android:id="@+id/save_button_5"
+        android:layout_width="@dimen/save_button_width"
+        android:layout_height="@dimen/save_button_height"
+        android:background="@drawable/button_border"
+        android:text="5"
+        android:textSize="@dimen/save_buttons_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/save_button_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save_button_4"
+        app:layout_constraintTop_toTopOf="@+id/save_button_4" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="@dimen/bottom_button_width"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/refresh_button"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/text_type2"
+        android:textSize="@dimen/bottom_button_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/load_button"
+        android:layout_width="@dimen/bottom_button_width"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/save_button_unclicked"
+        android:text="@string/load"
+        android:textAllCaps="false"
+        android:textColor="@color/button_type2"
+        android:textSize="@dimen/bottom_button_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/save_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/save_button"
+        app:layout_constraintTop_toBottomOf="@+id/save_button"
+        app:layout_constraintVertical_bias="0.09" />
+
+
+</android.support.constraint.ConstraintLayout>

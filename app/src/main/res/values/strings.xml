@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name" translatable="false">Smart Track</string>
+    <string name="greeting">Please choose a language</string>
+    <string name="langBtn1">English</string>
+    <string name="langBtn2">Francais</string>
+    <string name="langBtn3">Italiano</string>
+    <string name="langBtn4">Chinese</string>
+    <string name="refreshBLETable">Search for Devices</string>
+    <string name="your_preset">Your Preset</string>
+    <string name="light_button">Light</string>
+    <string name="motor_button">Motor</string>
+    <string name="function">Function</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="device_id" translatable="false">Device ID</string>
+    <string name="reset">Reset</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth is not supported</string>
+
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="scan_Btn">Scan</string>
+    <string name="stop_Btn">Stop</string>
+    <string name="intensity">INTENSITY, %</string>
+    <string name="light_temperature">LIGHT TEMPERATURE</string>
+    <string name="dialog_title">Information</string>
+    <string name="dialog_message">Unable to connect to device</string>
+    <string name="dialog_button">Ok</string>
+    <string name="scanning">Scanning</string>
+    <string name="smart_track" translatable="false">Smart Track</string>
+    <string name="light_100" translatable="false">100%</string>
+    <string name="light_50" translatable="false">50%</string>
+    <string name="light_0" translatable="false">0%</string>
+    <string name="powered_by" translatable="false">Powered by</string>
+    <string name="seems_like_you_haven_t_add_any_device">Seems like you haven\'t add any device.</string>
+    <string name="laser">Laser</string>
+    <string name="no_devices_detected_image" translatable="false">No devices detected</string>
+    <string name="company_logo" translatable="false">company_logo</string>
+    <string name="factory_reset">Factory Reset</string>
+    <string name="exit_string">Exit Smart Track?</string>
+    <string name="yes_string">Yes</string>
+    <string name="no_string">No</string>
+    <string name="location_request_string">Location service is required to use this app. Allow location access?</string>
+    <string name="location_permission_string">Allow Smart Track to access location permissions?</string>
+</resources>
