@@ -62,12 +62,6 @@ public class DeviceMainActivity extends AppCompatActivity implements ServiceConn
 
     private DatabaseHelper myDb;
 
-    // Handles various events fired by the Service.
-    // ACTION_GATT_CONNECTED: connected to a GATT server.
-    // ACTION_GATT_DISCONNECTED: disconnected from a GATT server.
-    // ACTION_GATT_SERVICES_DISCOVERED: discovered GATT services.
-    // ACTION_DATA_AVAILABLE: received data from the device. This can be a
-    // result of read or notification operations.
     private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -77,7 +71,6 @@ public class DeviceMainActivity extends AppCompatActivity implements ServiceConn
             } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
                 mConnected = false;
             } else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
-                // Show all the supported services and characteristics on the user interface.
                 Log.d("STATE: ", String.valueOf(mBluetoothLeService.getSupportedGattServices()));
 
                 Log.d(TAG, "onCreate: STARTED THE READING PROCESS HERE");
@@ -98,7 +91,6 @@ public class DeviceMainActivity extends AppCompatActivity implements ServiceConn
                     }
                 }
 
-                //Adding the characteristics
                 chars.add(rightService.getCharacteristic(UUID.fromString(BLE_UUID.CHAR_LIGHT_INTENSITY)));
                 chars.add(rightService.getCharacteristic(UUID.fromString(BLE_UUID.CHAR_LIGHT_COLOR)));
                 chars.add(rightService.getCharacteristic(UUID.fromString(BLE_UUID.LASER)));
