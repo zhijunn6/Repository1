@@ -71,16 +71,15 @@ public class DeviceMainActivity extends AppCompatActivity implements ServiceConn
             } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
                 mConnected = false;
             } else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
-                // Show all the supported services and characteristics on the user interface.
                 Log.d("STATE: ", String.valueOf(mBluetoothLeService.getSupportedGattServices()));
 
-                //Log.d(TAG, "onCreate: STARTED THE READING PROCESS HERE");
+                Log.d(TAG, "onCreate: STARTED THE READING PROCESS HERE");
 
                 if (mBluetoothLeService == null) {
                     final boolean result = mBluetoothLeService.connect(mDeviceAddress);
                     Log.d(TAG, "Connect request result=" + result);
                 }
-                //Log.d(TAG, "onResume: Get SERVICES and CHARACTERISTICS");
+                Log.d(TAG, "onResume: Get SERVICES and CHARACTERISTICS");
 
                 services = mBluetoothLeService.getSupportedGattServices();
 
@@ -88,11 +87,10 @@ public class DeviceMainActivity extends AppCompatActivity implements ServiceConn
                 for (int i = 0; i < services.size(); i++) {
                     if (services.get(i).getUuid().toString().equals(BLE_UUID.SERVICE_INFORMATION)) {
                         rightService = services.get(i);
-                        //Log.e("service found : ", rightService.getUuid().toString());
+                        Log.e("service found : ", rightService.getUuid().toString());
                     }
                 }
 
-                //Adding the characteristics
                 chars.add(rightService.getCharacteristic(UUID.fromString(BLE_UUID.CHAR_LIGHT_INTENSITY)));
                 chars.add(rightService.getCharacteristic(UUID.fromString(BLE_UUID.CHAR_LIGHT_COLOR)));
                 chars.add(rightService.getCharacteristic(UUID.fromString(BLE_UUID.LASER)));
